@@ -3,12 +3,16 @@ body,html{
     padding: 0;
     overflow-x: hidden;
     width:100%;
-    background:linear-gradient(#f9e0d8, #f6d3c5);
+    background-color:#f9e0d8;
 }
 *{
     box-sizing: border-box;
 }
 .profile-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     margin-top: 1rem;
     justify-self: center;
     width: fit-content;
@@ -283,7 +287,15 @@ main h2{
         width:30%;
     }
     .contact-container{
-        margin-top: 1rem;
+    align-self: center;
+    margin-top: 1rem;
+    padding: 1.4rem 4.2rem;
+    }
+    .contact-body{
+        gap: 1.3rem;
+    }
+    form{
+        width: 100%;
     }
     .about-body{
         gap: 2rem;
