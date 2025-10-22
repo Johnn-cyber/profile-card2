@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h3>Get In Touch</h3>
+        <div class="contact-body">
+            <div class="body-text">
+                <span>I would like to hear from you!</span>
+                <aside>Let us know how we can best serve you. Use the contact form to email us. You would get a feedback from us
+                </aside>
+            </div>
+            <form id="myform">
+                <div class="formctain">
+                <label for="fname">Full Name <span>*</span> </label>
+                <input type="text" name="fname" id="fname" aria-describedby="error-name" data-testid="test-contact-name">
+                <div id="error-name" role="alert" data-testid="test-contact-error-name" class="error"></div>
+                </div>
+
+                <div class="formctain">
+                <label for="email">E-mail <span>*</span></label>
+                <input type="email" name="email" id="email" aria-describedby="error-email" data-testid="test-contact-email">
+                <div id="error-email" role="alert" data-testid="test-contact-error-email" class="error"></div>
+                </div>
+
+                <div class="formctain">
+                <label for="subject">Subject <span>*</span></label>
+                <input type="text" name="subject" id="subject" aria-describedby="error-subject" data-testid="test-contact-subject">
+                <div id="error-subject" role="alert" data-testid="test-contact-error-subject" class="error"></div>
+                </div>
+
+                <div class="formctain">
+                <label for="message">Message <span>*</span></label>
+                <textarea name="message" id="message" aria-describedby="error-message" data-testid="test-contact-message" rows="6" cols="20"></textarea>
+                <div id="error-message" role="alert" data-testid="test-contact-error-message" class="error"></div>
+                </div>
+                <input type="submit" name="submit" value="Submit" id="submit-button" data-testid="test-contact-submit">   
+                <div id="success" data-testid="test-contact-success" class="success"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

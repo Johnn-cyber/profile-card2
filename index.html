@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article data-testid="test-profile-card" class="profile-card">
+            <figure>
+            <img src="me.png" alt="user-image" data-testid="test-user-avatar"> 
+            <figcaption><h2>Akani John Praise</h2></figcaption>
+            </figure>        
+        <p data-testid="test-user-bio" class="bio">I'm a frontend developer based in Lagos, I'll help you build beautiful website your users will love.</p>
+        <div class="clock">
+            <i class="fas fa-clock" ></i>
+        <b data-testid="test-user-time" id="time"></b>
+ </div>
+    <div class="about">
+        <section id="hobbies">
+        <span class="list">Hobbies</span>
+        <hr>
+        <ul>
+            <li>Reading</li>
+            <li>Gaming</li>
+            <li>Programming</li>
+            <li>Watching Movies</li>
+        </ul>
+        </section>
+        <section id="dislikes">
+            <span>Dislikes</span>
+            <hr>
+            <ul>
+                <li>Crowds</li>
+                <li>Slow Internet</li>
+                <li>Noise</li>
+                <li>Bugs</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+    <a href="contact-us.html" class="buttons">Get in Touch</a>
+    <a href="about-us.html" class="buttons">About Me</a>
+    </footer>
+     <div class="socials">
+        <b>Contact me at</b>
+    <nav data-testid="test-user-social-links">
+        <a href="https://x.com/happycode_" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+        <a href="https://www.linkedin.com/in/akani-johnpraise-97221222b" target="_blank" data-testid="test-user-social-linkedln">Linkedln</a>
+        <a href="https://github.com/Johnn-cyber" target="_blank" data-testid="test-user-social-github">Github</a>
+    </nav>
+    </div>
+    </article>
+    <script>
+        let time = document.getElementById("time");
+        time.textContent =Date.now();
+    </script>
+</body>
+</html>
