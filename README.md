@@ -37,6 +37,8 @@ This project focuses on creating an accessible, mobile-friendly, and reusable pr
 ├── index.html
 ├── style.css
 ├── script.js
+├── about-me.html
+├── contact-us.html
 
 ---
 
@@ -70,4 +72,5 @@ This project focuses on creating an accessible, mobile-friendly, and reusable pr
 John Akani
 💼 LinkedIn
  🌐 Portfolio
+
  🐙 GitHub
