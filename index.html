@@ -19,7 +19,7 @@
         <b data-testid="test-user-time" id="time"></b>
  </div>
     <div class="about">
-        <section id="hobbies">
+        <section id="hobbies" data-testid="test-user-hobbies">
         <span class="list">Hobbies</span>
         <hr>
         <ul>
@@ -29,7 +29,7 @@
             <li>Watching Movies</li>
         </ul>
         </section>
-        <section id="dislikes">
+        <section id="dislikes" data-testid="test-user-dislikes">
             <span>Dislikes</span>
             <hr>
             <ul>
@@ -58,4 +58,5 @@
         time.textContent =Date.now();
     </script>
 </body>
+
 </html>
